@@ -23,7 +23,7 @@ git clone https://github.com/your-username/maper.git .
 2. Install the required dependencies:
 
 ```
-npm install requirements.txt
+npm install
 ```
 
 3. Run the dev version:
