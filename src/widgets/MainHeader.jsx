@@ -3,15 +3,15 @@ import logo from '../assets/testMaperLogo.svg'
 import WhiteButton from '../components/WhiteButton';
 import Spacer from '../components/Spacer';
 
-const MainHeader = () => {
+const MainHeader = () => { 
     return(
         <div className='mainHeaderContent'>
             <img src={logo} alt="maperLogo" className='maperLogo' />
-            <Spacer></Spacer>
+            <Spacer />
             <h3 className='chtoto'>Чтото</h3>
             <h3 className='chtoto'>Чтото</h3>
             <h3 className='chtoto'>Чтото</h3>
-            <button className='headerWhiteButton'><WhiteButton text={'Войти'}></WhiteButton></button>
+            <WhiteButton text={'Войти'} />
         </div>
     );
 };

@@ -1,15 +1,16 @@
-import "./styles/MainPage.scss";
 import MainHeader from "../widgets/MainHeader";
 import MainBody from "../widgets/MainBody";
 import MainFooter from "../widgets/MainFooter";
+import MainPageLayout from "./MainPageLayout";
 
 const MainPage = () => {
   return (
-    <div className="pageContent">
-      <MainHeader />
+    <MainPageLayout 
+        header={<MainHeader />} 
+        footer={<MainFooter />}
+    >
       <MainBody />
-      <MainFooter />
-    </div>
+    </MainPageLayout>
   );
 };
 

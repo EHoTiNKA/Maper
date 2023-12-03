@@ -1,0 +1,16 @@
+$header-height: 55px;
+
+.mainPageLayout{
+    .header{
+        height: $header-height;
+        width: 100%;
+
+        position: fixed;
+    }
+    
+    .body{
+        .headerPlug{
+            height: $header-height;
+        }
+    }
+}
