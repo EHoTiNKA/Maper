@@ -1,5 +1,5 @@
 import "./App.scss";
-import MainPage from"./widgets/MainPage";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return <MainPage />;

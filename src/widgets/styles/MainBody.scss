@@ -3,16 +3,19 @@
     180deg,
     #95a792,
     #596c68
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     180deg,
     #95a792,
     #596c68
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
 }
 
-.bodyContent {
-  padding: 180px 180px 0px 180px;
+
+.firstBlockBody {
+  width: 20%;
+  font-family: "Nunito", sans-serif;
+
   background-color: #3f775f;
 
   .bodyLine {
@@ -20,13 +23,6 @@
     transform: scale(1.167);
     position: absolute;
   }
-}
-
-.firstBlockText {
-  margin-left: 450px;
-  margin-right: 450px;
-  width: 20%;
-  font-family: "Nunito", sans-serif;
   
 
 
@@ -40,8 +36,6 @@
 }
 
 .secondBodyText {
-  margin-left: 450px;
-  margin-right: 450px;
   padding-bottom: 10%;
   width: 30%;
   font-family: "Nunito", sans-serif;

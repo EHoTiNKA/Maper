@@ -3,8 +3,8 @@ import "./styles/MainBody.scss";
 const MainBody = () => {
   return (
     <div className="mainBodyContent">
-      <div className="bodyContent">
-        <div className="firstBlockText">
+      {/* <div className="bodyContent"> */}
+        <div className="firstBlockBody">
           <h1>
             Maper объединяет все ваши задачи, партнеров по команде и инструменты
           </h1>
@@ -12,7 +12,7 @@ const MainBody = () => {
             Храните все в одном месте - даже если ваша команда там не находится.
           </p>
         </div>
-      </div>
+      {/* </div> */}
       <div className="bodyLine">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
