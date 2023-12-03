@@ -3,7 +3,6 @@ import "./styles/MainBody.scss";
 const MainBody = () => {
   return (
     <div className="mainBodyContent">
-      {/* <div className="bodyContent"> */}
         <div className="firstBlockBody">
           <h1>
             Maper объединяет все ваши задачи, партнеров по команде и инструменты
@@ -12,7 +11,6 @@ const MainBody = () => {
             Храните все в одном месте - даже если ваша команда там не находится.
           </p>
         </div>
-      {/* </div> */}
       <div className="bodyLine">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -22,7 +20,7 @@ const MainBody = () => {
           ></path>
         </svg>
       </div>
-      <div className="secondBodyText">
+      <div className="secondBlockBody">
         <h1>Мощный инструмент повышения производительности</h1>
         <p>
           Простой, гибкий и мощный. Все, что требуется, - это доски, списки и

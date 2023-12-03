@@ -1,7 +1,7 @@
 import MainHeader from "../widgets/MainHeader";
-import MainBody from "../widgets/MainBody";
 import MainFooter from "../widgets/MainFooter";
 import MainPageLayout from "./MainPageLayout";
+import Intro from "../widgets/MainPageContent/Intro";
 
 const MainPage = () => {
   return (
@@ -9,7 +9,7 @@ const MainPage = () => {
         header={<MainHeader />} 
         footer={<MainFooter />}
     >
-      <MainBody />
+      <Intro />
     </MainPageLayout>
   );
 };

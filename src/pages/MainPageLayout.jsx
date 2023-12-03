@@ -1,4 +1,6 @@
 import "./styles/MainPageLayout.scss";
+
+
 const MainPageLayout = ({ header, footer, children }) => {
   return (
     <div className="mainPageLayout">
