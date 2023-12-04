@@ -1,20 +1,22 @@
 .intro {
   font-family: "Nunito", sans-serif;
-  background-color: #3f775f;
 
-  .introContent {
-    height: 80%;
-    h1 {
-      color: aliceblue;
-      margin-bottom: 20px;
-    }
-    p {
-      color: aliceblue;
-    }
+  background-image: url(../../../assets/white-wave-bg4.svg);
+  background-position: center bottom;
+  background-size: 200% 22600px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  // background-color: #3f775f;
+
+  padding-bottom: 100px;
+
+  h1 {
+    color: aliceblue;
+    margin-bottom: 20px;
   }
-
-  .introWave {
-    height: 50%;
-    background-image: url("../../../assets/MainPageWave.svg");
+  p {
+    color: aliceblue;
   }
 }

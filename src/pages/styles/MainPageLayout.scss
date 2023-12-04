@@ -1,16 +1,19 @@
-$header-height: 55px; 
+$header-height: 55px;
 
-.mainPageLayout{
-    .header{
-        height: $header-height;
-        width: 100%;
+.mainPageLayout {
+  .header {
+    height: $header-height;
+    width: 100%;
 
-        position: fixed;
+    position: fixed;
+  }
+
+  .main {
+    min-height: 100dvh;
+    background: -webkit-linear-gradient(180deg, #95a792, #596c68);
+    background: linear-gradient(180deg, #95a792, #596c68);
+    .headerPlug {
+      height: $header-height;
     }
-    
-    .body{
-        .headerPlug{
-            height: $header-height;
-        }
-    }
+  }
 }
