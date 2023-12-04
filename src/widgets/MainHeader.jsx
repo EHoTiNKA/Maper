@@ -11,7 +11,7 @@ const MainHeader = () => {
             <h3 className='chtoto'>Чтото</h3>
             <h3 className='chtoto'>Чтото</h3>
             <h3 className='chtoto'>Чтото</h3>
-            <WhiteButton text={'Войти'} />
+            <WhiteButton text={'Войти'} /> 
         </div>
     );
 };

@@ -3,7 +3,7 @@ import "./styles/WhiteButton.scss";
 const WhiteButton = ({ text }) => {
   return (
     <button className="whiteButton">
-      <p>{text}</p>
+      <p>{text}</p> 
     </button>
   );
 };
