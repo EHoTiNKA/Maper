@@ -1,0 +1,19 @@
+.IntroButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: 2px solid;
+    padding: 15px 35px;    
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    background-color: #51615d;
+    color: rgba(235, 235, 235, 0.986);
+    margin-left: 35px;
+
+    &:hover{
+        background-color: #768b86;
+        cursor: pointer;
+    }    
+}

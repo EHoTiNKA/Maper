@@ -1,6 +1,6 @@
 import './styles/MainHeader.scss'
 import logo from '../assets/testMaperLogo.svg'
-import WhiteButton from '../components/WhiteButton';
+import HeaderButton from '../components/HeaderButton';
 import Spacer from '../components/Spacer';
 
 const MainHeader = () => { 
@@ -11,7 +11,7 @@ const MainHeader = () => {
             <h3 className='chtoto'>Чтото</h3>
             <h3 className='chtoto'>Чтото</h3>
             <h3 className='chtoto'>Чтото</h3>
-            <WhiteButton text={'Войти'} /> 
+            <HeaderButton text={'Войти'} /> 
         </div>
     );
 };

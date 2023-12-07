@@ -1,22 +1,65 @@
 .intro {
   font-family: "Nunito", sans-serif;
 
-  background-image: url(../../../assets/white-wave-bg4.svg);
-  background-position: center bottom;
-  background-size: 200% 22600px;
+  background-image: url(../../../assets/white-wave-bg.svg);
+  background-position: center bottom -0.5px;
+  background-size: 130% 35%;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-origin: padding-box;
   background-clip: border-box;
-  // background-color: #3f775f;
+  background-color: #3f775f;
 
-  padding-bottom: 100px;
+  padding-bottom: 190px;
 
-  h1 {
-    color: aliceblue;
-    margin-bottom: 20px;
+  .introContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .introText {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 32px;
+        color: aliceblue;
+        margin-bottom: 20px;
+        // padding-top: 10px;
+        width: 70%;
+      }
+      .introParagr {
+        color: aliceblue;
+        font-size: 24px;
+        padding-bottom: 110px;
+        width: 70%;
+      }
+
+      .introInput {
+        width: 40%;
+        height: 60px;
+        border-radius: 15px;
+        border: none;
+        font-family: "Nunito", sans-serif;
+        font-size: 24px;
+        padding-left: 25px;
+        opacity: 0.8;
+        outline-color: rgba(228, 228, 228, 0.884);
+        z-index: 1;
+      }
+    }
+
+    .introImg {
+      img {
+        height: 520px;
+        margin-top: 110px;
+      }
+    }
   }
-  p {
-    color: aliceblue;
+  .introRegInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
   }
 }

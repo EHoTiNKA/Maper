@@ -4,14 +4,14 @@ $header-height: 55px;
   .header {
     height: $header-height;
     width: 100%;
-
+    z-index: 2;
     position: fixed;
   }
 
   .main {
-    min-height: 100dvh;
-    background: -webkit-linear-gradient(180deg, #95a792, #596c68);
-    background: linear-gradient(180deg, #95a792, #596c68);
+    // min-height: 100dvh;
+    // background: -webkit-linear-gradient(180deg, #95a792, #596c68);
+    // background: linear-gradient(180deg, #95a792, #596c68);
     .headerPlug {
       height: $header-height;
     }

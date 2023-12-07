@@ -1,0 +1,34 @@
+.ProductivityPowerhouse {
+  margin-bottom: 180px;
+
+  .ProductivityPowerhouseTitle {
+    font-family: "Nunito", sans-serif;
+    font-size: 48px;
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  .ProductivityPowerhouseParagr {
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    width: 60%;
+    margin-bottom: 60px;
+  }
+
+  .ProductivityPowerhouseBlock {
+
+    display: flex;
+    justify-content: center;
+
+    .ProductivityPowerhouseCards {
+      display: flex;
+      flex-direction: column;
+    }
+    .ProductivityPowerhouseImg {
+      img {
+        margin-left: 50px;
+        height: 700px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

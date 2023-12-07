@@ -1,0 +1,28 @@
+.MoreWithMaper{
+    margin-bottom: 80px;
+    .MoreWithMaperText{
+        font-family: 'Nunito', sans-serif;
+
+        .MoreWithMaperTitle{
+            font-size: 48px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .MoreWithMaperParagr{
+            font-size: 24px;
+            width: 50%;
+        }
+    }
+
+    .MoreWithMaperBlock{
+        display: grid;
+        grid-template-columns: repeat(3, 0.8fr);
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 50px;
+        margin-bottom: 80px;
+
+    }
+}
