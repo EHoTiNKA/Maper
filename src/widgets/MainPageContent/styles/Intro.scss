@@ -1,16 +1,27 @@
 .intro {
   font-family: "Nunito", sans-serif;
 
+// <<<<<<< HEAD
   background-image: url(../../../assets/white-wave-bg.svg);
   background-position: center bottom -0.5px;
   background-size: 130% 35%;
+// =======
+//   background-image: url(../../../assets/wave.svg);
+//   background-position: center bottom;
+//   background-size: 100%;
+// >>>>>>> b448f5a907379a749b648f52ebe0c677641e2aa9
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-origin: padding-box;
   background-clip: border-box;
+// <<<<<<< HEAD
   background-color: #3f775f;
 
   padding-bottom: 190px;
+// =======
+
+//   padding-bottom: 200px;
+// >>>>>>> b448f5a907379a749b648f52ebe0c677641e2aa9
 
   .introContent {
     display: flex;
