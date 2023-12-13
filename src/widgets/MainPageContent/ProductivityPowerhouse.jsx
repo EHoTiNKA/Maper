@@ -1,13 +1,15 @@
 import "./styles/ProductivityPowerhouse.scss";
 import ContentColumn from "../../components/ContentColumn";
 import ProductivityPowerhouseCard from "../../components/ProductivityPowerhouseCard";
-import WinterImg from "../../assets/WinterImg.jpeg"
+import WinterImg from "../../assets/WinterImg.jpeg";
 
 const ProductivityPowerhouse = () => {
   return (
     <ContentColumn>
       <div className="ProductivityPowerhouse">
-        <h1 className="ProductivityPowerhouseTitle">Мощный инструмент повышения производительности</h1>
+        <h1 className="ProductivityPowerhouseTitle">
+          Мощный инструмент повышения производительности
+        </h1>
         <p className="ProductivityPowerhouseParagr">
           Простой, гибкий и мощный. Все, что требуется, - это доски объявлений,
           списки и карточки, чтобы получить четкое представление о том, кто что
