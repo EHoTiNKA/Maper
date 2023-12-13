@@ -1,9 +1,20 @@
+import { useState } from "react";
+
 import "./styles/ProductivityPowerhouse.scss";
 import ContentColumn from "../../components/ContentColumn";
 import ProductivityPowerhouseCard from "../../components/ProductivityPowerhouseCard";
-import WinterImg from "../../assets/WinterImg.jpeg";
 
 const ProductivityPowerhouse = () => {
+  const content = [
+    "/src/assets/1.png",
+    "/src/assets/3.jpg",
+    "/src/assets/4.png",
+  ];
+
+  const [currentFrameNumber, setCurrentFrameNumber] = useState(0);
+
+  const frames = content;
+
   return (
     <ContentColumn>
       <div className="ProductivityPowerhouse">
@@ -14,6 +25,7 @@ const ProductivityPowerhouse = () => {
           делает и что необходимо сделать. Узнайте больше в нашем руководстве по
           началу работы.
         </p>
+
         <div className="ProductivityPowerhouseGrid">
           <ProductivityPowerhouseCard
             title={"Доски"}
@@ -33,33 +45,24 @@ const ProductivityPowerhouse = () => {
               "Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
             }
           />
-          <div className="ProductivityPowerhouseImg"></div>
+
+          <div className="ProductivityPowerhouseSlider">
+            <div className="frame-container">
+              <p className="frameNumber">{currentFrameNumber}</p>
+              {frames.map((image, index) => (
+                <div
+                  key={index}
+                  className={`frame frame_${index}`}
+                  // className={`frame ${index === currentFrameNumber ? "active" : ""}`}
+                  style={{
+                    // transform: `translateX(-${currentFrameNumber * 100}%)`,
+                    backgroundImage: `url(${image})`,
+                  }}
+                />
+              ))}
+            </div>
+          </div>
         </div>
-        {/* <div className="ProductivityPowerhouseBlock">
-          <div className="ProductivityPowerhouseCards">
-            <ProductivityPowerhouseCard
-              title={"Доски"}
-              desciption={
-                "Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
-              }
-            />
-            <ProductivityPowerhouseCard
-              title={"Доски"}
-              desciption={
-                "Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
-              }
-            />
-            <ProductivityPowerhouseCard
-              title={"Доски"}
-              desciption={
-                "Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
-              }
-            />
-          </div>
-          <div className="ProductivityPowerhouseImg">
-            <img src={WinterImg} alt="dad" />
-          </div>
-        </div> */}
       </div>
     </ContentColumn>
   );

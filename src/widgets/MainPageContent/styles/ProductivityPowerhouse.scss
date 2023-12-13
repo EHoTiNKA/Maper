@@ -27,23 +27,49 @@
       ". image"
       ". image";
 
-      // .card1{
-      //   grid-area: card1;
-      // }
-      // .card2{
-      //   grid-area: card2;
-      // }
-      // .card3{
-      //   grid-area: card3;
-      // }
-      .ProductivityPowerhouseImg{
-        height: 100%;
+    .ProductivityPowerhouseSlider {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      grid-area: image;
+
+      // background-image: url("../../../assets/WinterImg.jpeg");
+      border-radius: 20px;
+
+      .frame-container {
         width: 100%;
-        grid-area: image;
-        background-image: url("../../../assets/WinterImg.jpeg");
-        border-radius: 20px;
-        
+        height: 100%;
+
+        display: flex;
+        // transition: transform 0.5s ease; /* Add a transition for smooth frame switching */
+        transition: transform 2s ease-in-out;
+
+        .frameNumber {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          color: aqua;
+        }
+
+        .frame {
+          width: 100%;
+          height: 100%;
+
+          flex: 0 0 100%;
+          background-size: cover;
+          background-position: center;
+
+          transform: translateX(-100%);
+          // opacity: 0;
+          // transition: opacity 0.5s ease; /* Add a transition for smooth opacity change */
+
+          &.active {
+            transform: translateX(0); /* Active frame is inside the container */
+          }
+        }
       }
+    }
   }
 
   // .ProductivityPowerhouseBlock {
