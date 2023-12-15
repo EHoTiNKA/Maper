@@ -13,7 +13,7 @@ const MaperPricedCard = ({
       <h2 className="MaperPricedCardTitle">{name}</h2>
       <div className="MaperPricedCardPriceBlock">
         <p className="MaperPricedCardPrice">{price}</p>
-        <p className="MaperPricedCardPriceValute">RUB</p>
+        <p className="MaperPricedCardPriceValute">RUB</p> 
       </div>
       <p className="MaperPricedCardLittleDesc">{littleDesc}</p>
       <p className="MaperPricedCardDescription">{description}</p>

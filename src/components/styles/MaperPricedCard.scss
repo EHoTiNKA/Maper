@@ -13,6 +13,7 @@
 
   &:hover{
     border: 3px rgb(35, 104, 224) solid;
+    transition: 1s;
   }
 
   .MaperPricedCardTitle {
@@ -69,6 +70,7 @@
 
     &:hover{
         background-color: rgba(70, 135, 255, 0.137);
+        transition: 0.5s;
         cursor: pointer;
     }  
   }
