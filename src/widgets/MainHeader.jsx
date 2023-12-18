@@ -1,4 +1,5 @@
 import './styles/MainHeader.scss'
+import { Link } from "react-router-dom"
 import logo from '../assets/testMaperLogo.svg'
 import HeaderButton from '../components/HeaderButton';
 import Spacer from '../components/Spacer';
@@ -11,7 +12,7 @@ const MainHeader = () => {
             <h3 className='chtoto'>Чтото</h3>
             <h3 className='chtoto'>Чтото</h3>
             <h3 className='chtoto'>Чтото</h3>
-            <HeaderButton text={'Войти'} /> 
+            <Link to={"/login"}><HeaderButton text={'Войти'} /></Link>
         </div>
     );
 };

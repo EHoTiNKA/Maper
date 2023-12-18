@@ -10,6 +10,7 @@ import MaperPriced from "../widgets/MainPageContent/MaperPriced";
 import GetStartedWithMaper from "../widgets/MainPageContent/GetStartedWithMaper";
 
 
+
 const MainPage = () => {
   return (
     <MainPageLayout 
