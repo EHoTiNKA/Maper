@@ -9,7 +9,6 @@ import MoreWithMaper from "../widgets/MainPageContent/MoreWithMaper";
 import MaperPriced from "../widgets/MainPageContent/MaperPriced";
 import GetStartedWithMaper from "../widgets/MainPageContent/GetStartedWithMaper";
 
-import LogRegPage from "./LogRegPage";
 
 const MainPage = () => {
   return (
@@ -22,7 +21,6 @@ const MainPage = () => {
       <MoreWithMaper />
       <MaperPriced />
       <GetStartedWithMaper />
-      <LogRegPage />
     </MainPageLayout>
   );
 };
