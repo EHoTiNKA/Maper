@@ -24,7 +24,7 @@ const ProductivityPowerhouse = () => {
           списки и карточки, чтобы получить четкое представление о том, кто что
           делает и что необходимо сделать. Узнайте больше в нашем руководстве по
           началу работы.
-        </p>
+        </p> 
 
         <div className="ProductivityPowerhouseGrid">
           <ProductivityPowerhouseCard
@@ -47,7 +47,7 @@ const ProductivityPowerhouse = () => {
           />
 
           <div className="ProductivityPowerhouseSlider">
-            <div className="frame-container">
+            <div className="frameContainer"> 
               <p className="frameNumber">{currentFrameNumber}</p>
               {frames.map((image, index) => (
                 <div
