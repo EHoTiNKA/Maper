@@ -10,6 +10,7 @@
   // margin-bottom: 25px;
   background-color: #618f7a;
   color: aliceblue;
+  cursor: pointer;
 
   h2 {
     font-size: 26px;
@@ -23,12 +24,11 @@
     padding-left: 15px;
   }
 
-  &:hover {
+  &.active {
     border-left: 6px #51615d solid;
     border-radius: 15px;
     -webkit-box-shadow: 8px 14px 17px 4px rgba(34, 60, 80, 0.33);
     -moz-box-shadow: 8px 14px 17px 4px rgba(34, 60, 80, 0.33);
     box-shadow: 8px 14px 17px 4px rgba(34, 60, 80, 0.33);
-    cursor: pointer;
   }
 }

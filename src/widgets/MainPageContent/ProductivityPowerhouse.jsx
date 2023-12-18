@@ -24,22 +24,34 @@ const ProductivityPowerhouse = () => {
           списки и карточки, чтобы получить четкое представление о том, кто что
           делает и что необходимо сделать. Узнайте больше в нашем руководстве по
           началу работы.
-        </p> 
+        </p>
 
         <div className="ProductivityPowerhouseGrid">
           <ProductivityPowerhouseCard
+            isActive={currentFrameNumber == 0}
+            onClick={() => {
+              setCurrentFrameNumber(0);
+            }}
             title={"Доски"}
             desciption={
               "Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
             }
           />
           <ProductivityPowerhouseCard
+            isActive={currentFrameNumber == 1}
+            onClick={() => {
+              setCurrentFrameNumber(1);
+            }}
             title={"Доски"}
             desciption={
               "Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
             }
           />
           <ProductivityPowerhouseCard
+            isActive={currentFrameNumber == 2}
+            onClick={() => {
+              setCurrentFrameNumber(2);
+            }}
             title={"Доски"}
             desciption={
               "Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
@@ -47,15 +59,14 @@ const ProductivityPowerhouse = () => {
           />
 
           <div className="ProductivityPowerhouseSlider">
-            <div className="frameContainer"> 
-              <p className="frameNumber">{currentFrameNumber}</p>
+            <div className="frameContainer">
+              {/* <p className="frameNumber">{currentFrameNumber}</p> */}
               {frames.map((image, index) => (
                 <div
                   key={index}
-                  className={`frame frame_${index}`}
-                  // className={`frame ${index === currentFrameNumber ? "active" : ""}`}
+                  className={"frame"}
                   style={{
-                    // transform: `translateX(-${currentFrameNumber * 100}%)`,
+                    transform: `translateX(-${currentFrameNumber * 100}%)`,
                     backgroundImage: `url(${image})`,
                   }}
                 />
