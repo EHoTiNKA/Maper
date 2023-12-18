@@ -1,5 +1,5 @@
 .LogRegPage {
-  background-color: aliceblue;
+  background-color: rgba(187, 119, 119, 0.288);
   min-height: 100dvh;
   min-width: 100dvw;
 
@@ -43,10 +43,10 @@
         justify-content: center;
 
 
-        width: 320px;
+        width: 340px;
         height: 40px;
-        border-radius: 10px;
-        border: none;
+        border-radius: 5px;
+        border: 1px #e0e0e0 solid;
         font-size: 18px;
         padding-left: 25px;
         opacity: 0.8;

@@ -13,7 +13,7 @@ const MainFooter = () => {
         <FooterButton title={"Об Maper"} descirtion={"Что внутри досок?"} />
       </div>
       <div className="MainFooterSeconBlock">
-        <p className="MainFooterSeconBlockParagr">Your Privacy</p>
+        <p className="MainFooterSeconBlockParagr">Your Privacy</p> 
         <p className="MainFooterSeconBlockParagr">Privacy Policy</p>
         <p className="MainFooterSeconBlockParagr">Terms</p>
         <p className="MainFooterSeconBlockParagr">Copyright © 2023 Maper</p>

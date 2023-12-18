@@ -11,7 +11,7 @@ const LogRegPage = () => {
                 <input type="text" placeholder='email' className='RegMenuInput'/>
                 <p className='RegMenuParagr'>Регистрируясь, я соглашаюсь с Условиями использования продуктов Cloud и принимаю Политику конфиденциальности Atlassian.</p>
                 <button className='RegMenuButton'>Зарегестрироваться</button>
-                <p className='RegMenuParagr2'>Или продолжить с помощью:</p>
+                <p className='RegMenuParagr2'>Или продолжить с помощью:</p> 
                 <div className="RegWithGoogle">
                     <img src="" alt="googleLogo" />
                     <p className='RegWithGoogleParagr'></p>
