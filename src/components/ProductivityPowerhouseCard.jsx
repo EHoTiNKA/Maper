@@ -1,15 +1,23 @@
+// import { SliderContext } from "../widgets/Slider";
 import "./styles/ProductivityPowerhouseCard.scss";
+import { useContext } from "react";
+import { SliderContext } from "./SliderContext";
 
 const ProductivityPowerhouseCard = ({
+  number,
   title,
   desciption,
-  onClick,
-  isActive,
 }) => {
+
+  const { currentFrameNumber, setCurrentFrameNumber } = useContext(SliderContext);
+  const isActive = currentFrameNumber === number;
+
   return (
     <div
       className={`ProductivityPowerhouseCard ${isActive ? "active" : ""}`}
-      onClick={onClick}
+      onClick={() => {
+        setCurrentFrameNumber(number);
+      }}
     >
       <h2>{title}</h2> 
       <p>{desciption}</p>

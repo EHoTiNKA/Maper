@@ -1,0 +1,44 @@
+.slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    grid-area: image;
+
+    // background-image: url("../../../assets/WinterImg.jpeg");
+    border-radius: 20px;
+
+    .frameContainer {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      display: flex;
+      // transition: transform 3s ease; /* Add a transition for smooth frame switching */
+      // transition: transform 2s ease-in-out;
+
+      // .frameNumber {
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   z-index: 1;
+      //   color: aqua;
+      // }
+
+      .frame {
+        width: 100%;
+        height: 100%;
+
+        flex: 0 0 100%;
+        background-size: cover;
+        background-position: center;
+
+        // transform: translateX(-100%);
+        // opacity: 0;
+        transition: transform 0.8s ease; /* Add a transition for smooth opacity change */
+
+        &.active {
+          transform: translateX(0); /* Active frame is inside the container */
+        }
+      }
+    }
+  }

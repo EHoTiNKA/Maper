@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./styles/ProductivityPowerhouse.scss";
 import ContentColumn from "../../components/ContentColumn";
+import Slider from "../Slider";
 import ProductivityPowerhouseCard from "../../components/ProductivityPowerhouseCard";
 
 const ProductivityPowerhouse = () => {
@@ -11,9 +12,9 @@ const ProductivityPowerhouse = () => {
     "/src/assets/4.png",
   ];
 
-  const [currentFrameNumber, setCurrentFrameNumber] = useState(0);
+  // const [currentFrameNumber, setCurrentFrameNumber] = useState(0);
 
-  const frames = content;
+  // const frames = content;
 
   return (
     <ContentColumn>
@@ -27,7 +28,29 @@ const ProductivityPowerhouse = () => {
         </p>
 
         <div className="ProductivityPowerhouseGrid">
-          <ProductivityPowerhouseCard
+          <Slider
+            content={content}
+            controls={
+              <>
+                <ProductivityPowerhouseCard
+                  number={0}
+                  title="Доски"
+                  desciption="Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
+                />
+                <ProductivityPowerhouseCard
+                  number={1}
+                  title="Доски"
+                  desciption="Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
+                />
+                <ProductivityPowerhouseCard
+                  number={2}
+                  title="Доски"
+                  desciption="Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
+                />
+              </>
+            }
+          />
+          {/* <ProductivityPowerhouseCard
             isActive={currentFrameNumber == 0}
             onClick={() => {
               setCurrentFrameNumber(0);
@@ -56,23 +79,7 @@ const ProductivityPowerhouse = () => {
             desciption={
               "Доски Maper позволяют систематизировать задачи и продвигать работу вперед. Одним взглядом вы увидите все, от что нужно сделать до о, да, мы сделали это!"
             }
-          />
-
-          <div className="ProductivityPowerhouseSlider">
-            <div className="frameContainer">
-              {/* <p className="frameNumber">{currentFrameNumber}</p> */}
-              {frames.map((image, index) => (
-                <div
-                  key={index}
-                  className={"frame"}
-                  style={{
-                    transform: `translateX(-${currentFrameNumber * 100}%)`,
-                    backgroundImage: `url(${image})`,
-                  }}
-                />
-              ))}
-            </div>
-          </div>
+          /> */}
         </div>
       </div>
     </ContentColumn>
