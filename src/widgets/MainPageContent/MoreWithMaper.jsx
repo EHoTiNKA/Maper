@@ -14,7 +14,7 @@ const MoreWithMaper = () => {
             быстро настраивать рабочие процессы практически для чего угодно.
           </p>
         </div>
-        <div className="MoreWithMaperBlock"> 
+        <div className="MoreWithMaperBlock">
           <MoreWithMaperCard
             img={CardImg}
             title={"Интеграции"}
@@ -39,6 +39,8 @@ const MoreWithMaper = () => {
             }
             buttonText={"Открыть интеграцию"}
           />
+        </div>
+        <div className="moreWithMaperSlider">
         </div>
       </div>
     </ContentColumn>
