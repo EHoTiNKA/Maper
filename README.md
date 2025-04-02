@@ -35,7 +35,7 @@ npm run dev
 
 ## Contributing
 
-If you want to contribute to the BrokolWeb, you can:
+If you want to contribute to the Maper, you can:
 
 - Report bugs and issues by creating a new issue in the repository.
 - Suggest new features and improvements by creating a new issue in the repository.
