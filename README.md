@@ -17,7 +17,7 @@ To transfer the project to yourself, follow these steps:
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/maper.git .
+git clone https://github.com/EHoTiNKA/Maper.git .
 ```
 
 2. Install the required dependencies:
